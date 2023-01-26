@@ -1,13 +1,76 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  font-family: 'Inter', sans-serif;
+}
+
+.map{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.volcanoeMarker{
+  cursor: pointer;
+}
+
+.marker{
+  font-size: 2rem;
+  color: red;
+}
+
+.locationInfo{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 60px;
+  right: 0;
+  color: #fff;
+  padding: 20px;
+}
+
+.locationInfo h3{
+  margin: 15px 0;
+}
+
+.locationInfo a{
+  text-decoration: none;
+  color: #fff;
+  background-color: crimson;
+  padding: 5px 10px;
+  font-size: 1rem;
+  margin: 15px 0;
+}
+
+.headerDiv{
+  position: absolute;
+  z-index: 100;
+  background-color: crimson;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  width: 350px;
+  padding: 10px;
+}
+
+.headerDiv h1{
+  margin-right: 10px;
+}
+
+.fire{
+  font-size: 2rem;
+}
+
+.loading{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  font-size: 2.2rem;
 }
